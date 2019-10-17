@@ -10,10 +10,16 @@ p {
   color: rgb(153, 153, 153);
 }
 .wrapper {
+  text-align: center;
   width: 96%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2%;
+}
+
+/* material icons */
+.material-icons.md-48 { 
+  font-size: 48px; 
 }
 
 /* navbar */
@@ -91,7 +97,6 @@ header {
   text-align: center;
 }
 header h2 { 
-  text-align: center;
   user-select: none;
   margin-top: 0;
   font-family: 'Kaushan Script', cursive;
@@ -108,7 +113,6 @@ header h2 span {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   display: block;
-  text-align: center;
   font-size: 4.5rem;
 }
 header a {
@@ -133,14 +137,14 @@ header .learn-more:hover {
   background: white;
   color: rgb(243, 129, 129);
 }
-header #main-banner a:before {
+#title-wrap:after {
   display: block;
   content: '';
   height: 1px;
-  width: 6%;
-  border-top: 4px solid white;
+  width: 65px;
+  border-bottom: 4px solid white;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 header .table {
   display: table;
@@ -171,4 +175,79 @@ header li:before {
   height: 1px;
   border-top: 4px solid white;
   margin: 0 auto;
+}
+
+/* about */
+#about {
+  padding-top: 90px;
+}
+#about h2 {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 1.875rem;
+  line-height: 0.6em;
+}
+#about h2:nth-child(2) {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+#about h2:nth-child(2):after {
+  content: '';
+  display: block;
+  height: 1px;
+  border-top: 4px solid rgb(243, 129, 129);
+  width: 65px;
+  margin: 30px auto;
+}
+#about-images {
+  margin-top: 90px;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+#about-images .images img {
+  max-width: 30vw;
+  display: block;
+}
+#about-images .images {
+  position: relative;
+  transition: transform 0.2s linear;
+}
+#about-images .images:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+#about-images .images:hover {
+  transform: translate(-9px, -9px);
+}
+#about-images .images:hover::before{
+  background-image: linear-gradient(rgba(234, 131, 131, 0.9), rgba(240, 217, 138, 0.9));
+}
+#about-images .shadow {
+  background: rgb(149, 225, 211);
+}
+#about-images .description {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  z-index: 2;
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#about-images p {
+  margin-top: 0;
+  color: white;
+  font-size: 1.3rem;
+}
+#about-images .images:hover .description{
+  display: block;
 }
