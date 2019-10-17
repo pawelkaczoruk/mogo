@@ -3,13 +3,15 @@
   <head>
     <meta name="viewport" content="width=device-width">
     <title>MoGo</title>
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700|Roboto:300i,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined">
     <link rel="stylesheet" href="style.css" type="text/css">
   </head>
   <body>
     <nav>
       <div class="wrapper">
         <h1>MoGo</h1>
-        <div>
+        <div class="main-nav">
           <h2>Main navigation</h2>
           <ul>
             <li><a href="">About</a></li>
@@ -17,24 +19,32 @@
             <li><a href="">Work</a></li>
             <li><a href="">Blog</a></li>
             <li><a href="">Contact</a></li>
-            <li><a href="">Purchase</a></li>
-            <li><a href="">Search</a></li>
+            <li><a href=""><i class="material-icons-outlined">shopping_cart</i></a></li>
+            <li><a href=""><i class="material-icons">search</i></a></li>
           </ul>
         </div>
       </div>
     </nav>
     <header>
       <!-- add different banner images on timer -->
-      <div id="main-banner" class="wrapper">
-        <h2>Creative Template</h2>
-        <h2>Welcome to mogo</h2>
-        <a href="">Learn more</a>
-        <ul>
-          <li><span>01</span> intro</li>
-          <li><span>02</span> work</li>
-          <li><span>03</span> about</li>
-          <li><span>04</span> contacts</li>
-        </ul>
+      <div id="main-banner">
+        <div class="wrapper">
+          <div id="title-wrap">
+            <h2>Creative Template</h2>
+            <h2>Welcome<span>to mogo</span></h2>
+          </div>
+          <a href="">
+            <div class="learn-more">Learn more</div>
+          </a>
+          <div class="table">
+            <ul>
+              <li><span>01</span> intro</li>
+              <li><span>02</span> work</li>
+              <li><span>03</span> about</li>
+              <li><span>04</span> contacts</li>
+            </ul>                   
+          </div>
+        </div>
       </div>
     </header>
     <main>
