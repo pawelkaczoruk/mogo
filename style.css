@@ -17,10 +17,12 @@ p {
   padding: 0 2%;
 }
 
+
 /* material icons */
 .material-icons.md-48 { 
   font-size: 48px; 
 }
+
 
 /* navbar */
 nav {
@@ -78,6 +80,7 @@ nav li:nth-child(-n+5) a:hover {
 nav li:nth-child(n+6) a:hover {
   color: rgb(252, 227, 138);
 }
+
 
 /* header */
 header {
@@ -177,6 +180,7 @@ header li:before {
   margin: 0 auto;
 }
 
+
 /* about */
 #about {
   padding-top: 90px;
@@ -250,4 +254,40 @@ header li:before {
 }
 #about-images .images:hover .description{
   display: block;
+}
+
+
+/* statistics */
+#statistics {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  margin-top: 90px;
+  height: 150px;
+  background: rgb(149, 225, 211);
+  overflow: hidden;
+}
+#statistics h3 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+#statistics p {
+  margin-bottom: 0;
+  color: white;
+  text-transform: uppercase;
+}
+#statistics .wrapper {
+  background: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 100%;
+  padding-left: 1px;
+  padding-right: 1px;
+}
+.stat-item {
+  background: rgb(149, 225, 211);
+  width: 19.9%;
+  min-width: 120px;
+  padding: 33px 0;
 }
