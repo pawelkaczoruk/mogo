@@ -16,7 +16,22 @@ p {
   margin: 0 auto;
   padding: 0 2%;
 }
-
+.text-c {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 1.875rem;
+  line-height: 0.6em;
+}
+.text-n {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.875rem;
+  line-height: 0.6em;
+}
+.text-wrap {
+  margin: 0 auto;
+  width: 80%;
+}
 
 /* material icons */
 .material-icons.md-48 { 
@@ -185,26 +200,16 @@ header li:before {
 #about {
   padding-top: 90px;
 }
-#about h2 {
-  font-family: 'Kaushan Script', cursive;
-  font-size: 1.875rem;
-  line-height: 0.6em;
-}
-#about h2:nth-child(2) {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  text-transform: uppercase;
-}
 #about h2:nth-child(2):after {
   content: '';
   display: block;
   height: 1px;
   border-top: 4px solid rgb(243, 129, 129);
   width: 65px;
-  margin: 30px auto;
+  margin: 60px auto;
 }
 #about-images {
-  margin-top: 90px;
+  margin-top: 120px;
   display: flex;
   position: relative;
   justify-content: space-between;
