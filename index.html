@@ -15,7 +15,7 @@
           <h2>Main navigation</h2>
           <ul>
             <li><a href="#about">About</a></li>
-            <li><a href="#services">Service</a></li>
+            <li><a href="#service">Service</a></li>
             <li><a href="">Work</a></li>
             <li><a href="">Blog</a></li>
             <li><a href="">Contact</a></li>
@@ -113,56 +113,55 @@
         <h2 class="text-n">Amazing services</h2>
         <ul>
           <li>
-            <div class="service-icon">
+            <div class="services-icon">
               <i class="material-icons-outlined md-48 cyan-icon">access_alarm</i>
             </div>
-            
-            <div class="service-description">
+            <div class="services-description">
               <h3 class="text-title">Photography</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit nesciunt.</p>
             </div>
           </li>
           <li>
-            <div class="service-icon">
+            <div class="services-icon">
               <i class="material-icons-outlined md-48 cyan-icon">broken_image</i>
             </div>
-            <div class="service-description">
+            <div class="services-description">
               <h3 class="text-title">Web design</h3>
               <p>Vel, obcaecati quod inventore, tempora consequuntur ipsam.</p>          
             </div>
           </li>
           <li>
-            <div class="service-icon">
+            <div class="services-icon">
               <i class="material-icons-outlined md-48 cyan-icon">landscape</i>
             </div>
-            <div class="service-description">
+            <div class="services-description">
               <h3 class="text-title">Creativity</h3>
               <p>Rerum cumque assumenda corporis consectetur, explicabo nulla porro.</p>
             </div>
           </li>
           <li>
-            <div class="service-icon">
+            <div class="services-icon">
               <i class="material-icons-outlined md-48 cyan-icon">menu_book</i>
             </div>
-            <div class="service-description">
+            <div class="services-description">
               <h3 class="text-title">SEO</h3>
               <p>Velit, iste veritatis. Debitis itaque praesentium nam temporibus.</p>
             </div>
           </li>
           <li>
-            <div class="service-icon">
+            <div class="services-icon">
               <i class="material-icons-outlined md-48 cyan-icon">house</i>
             </div>
-            <div class="service-description">
+            <div class="services-description">
               <h3 class="text-title">CSS/HTML</h3>
               <p>Nesciunt perspiciatis labore sapiente autem beatae facere nam libero.</p>
             </div>
           </li>
           <li>
-            <div class="service-icon">
+            <div class="services-icon">
               <i class="material-icons-round md-48 cyan-icon">fullscreen</i>
             </div>
-            <div class="service-description">
+            <div class="services-description">
               <h3 class="text-title">Digital</h3>
               <p>Assumenda rem tempore reiciendis nesciunt aliquid aperiam quidem cum.</p>
             </div>
@@ -185,36 +184,81 @@
           </div>
         </div>
       </section>
-      <section class="wrapper">
+      <section class="wrapper" id="service">
         <h2 class="text-c">Service</h2>
         <h2 class="text-n">What we do</h2>
         <div class="text-wrap">
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus autem eligendi cum, quae rem quod? Unde praesentium tempora modi quaerat sit quod labore eius, veritatis, aperiam ipsam harum tempore! Ea!</p>
         </div>
-        <img src="images/service.jpg" alt="photography">
-        <div>
-          <div>
-            <h3>Photography</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente itaque quas similique, amet error ea esse praesentium debitis id tempora ratione. Blanditiis aspernatur perspiciatis possimus laboriosam, alias quam tempora nulla.</p>
+        <div id="service-wrap">
+          <div id="service-picture">
+            <img src="images/service.jpg" alt="photography">
           </div>
-          <div>
-            <h3>Creativity</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente deserunt expedita natus cumque quod maxime sunt quo quam molestias doloribus! Sequi quos ad omnis voluptates explicabo assumenda optio quod atque.</p>
+
+          <div id="collapsible-set">
+            <div class="collapsible">
+              <div class="collapsible-title">
+                <i class="material-icons-outlined md-48 cyan-icon">photo</i>
+                <h3 class="text-title">Photography</h3>
+                <button class="arrow-button">
+                  <i class="material-icons-outlined md-36">keyboard_arrow_up</i>
+                </button>
+              </div>
+              <div class="collapsible-text active">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente itaque quas similique, amet error ea esse praesentium debitis id tempora ratione. Blanditiis aspernatur perspiciatis possimus laboriosam, alias quam tempora nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit laudantium incidunt sunt ad odio aliquam ipsam, modi numquam voluptas placeat illo eos animi reprehenderit rerum tempora pariatur consequatur et laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ipsum debitis fugiat ducimus deserunt magni, laborum nulla! Nam deserunt architecto eligendi quaerat quidem, voluptatibus veniam blanditiis sed laudantium corrupti nemo! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam excepturi culpa quae, similique incidunt placeat voluptas ea velit pariatur nam voluptatum distinctio natus magni est ab sint quisquam impedit dolore.</p>
+              </div>
+            </div>
+            <div class="collapsible">
+              <div class="collapsible-title">
+                <i class="material-icons-outlined md-48 cyan-icon">tune</i>
+                <h3 class="text-title">Creativity</h3>
+                <button class="arrow-button">
+                  <i class="material-icons-outlined md-36">keyboard_arrow_down</i>
+                </button>
+              </div>
+              <div class="collapsible-text">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente deserunt expedita natus cumque quod maxime sunt quo quam molestias doloribus! Sequi quos ad omnis voluptates explicabo assumenda optio quod atque. Sapiente itaque quas similique, amet error ea esse praesentium debitis id tempora ratione. Blanditiis aspernatur perspiciatis possimus laboriosam, alias quam tempora nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit laudantium incidunt sunt ad odio aliquam ipsam, modi numquam voluptas placeat illo eos animi reprehenderit rerum tempora pariatur consequatur et laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ipsum debitis fugiat ducimus deserunt magni, laborum nulla! Nam deserunt architecto eligendi quaerat quidem, voluptatibus veniam blanditiis sed laudantium corrupti nemo! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam excepturi culpa quae, similique incidunt placeat voluptas ea velit pariatur nam voluptatum distinctio natus magni est ab sint quisquam impedit dolore.</p>
+              </div>
+            </div>
+            <div class="collapsible">
+              <div class="collapsible-title">
+                <i class="material-icons-outlined md-48 cyan-icon">blur_circular</i>
+                <h3 class="text-title">Web design</h3>
+                <button class="arrow-button">
+                  <i class="material-icons-outlined md-36">keyboard_arrow_down</i>
+                </button>
+              </div>
+              <div class="collapsible-text">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis praesentium harum, assumenda cupiditate ducimus dicta, quod necessitatibus excepturi quasi dolorem asperiores sunt odio autem porro nisi quam corrupti ipsa facilis. Sapiente itaque quas similique, amet error ea esse praesentium debitis id tempora ratione. Blanditiis aspernatur perspiciatis possimus laboriosam, alias quam tempora nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit laudantium incidunt sunt ad odio aliquam ipsam, modi numquam voluptas placeat illo eos animi reprehenderit rerum tempora pariatur consequatur et laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ipsum debitis fugiat ducimus deserunt magni, laborum nulla! Nam deserunt architecto eligendi quaerat quidem, voluptatibus veniam blanditiis sed laudantium corrupti nemo! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam excepturi culpa quae, similique incidunt placeat voluptas ea velit pariatur nam voluptatum distinctio natus magni est ab sint quisquam impedit dolore.</p>
+              </div>
+            </div>
           </div>
-          <div>
-            <h3>Web design</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis praesentium harum, assumenda cupiditate ducimus dicta, quod necessitatibus excepturi quasi dolorem asperiores sunt odio autem porro nisi quam corrupti ipsa facilis.</p>
-          </div>
+
         </div>
-        <div>
-          <!-- change to arrow icons later -->
-          <a href="">Left arrow</a>
-          <div class="text-wrap">
-            <img src="images/chat.png" alt="chat icon">
-            <blockquote>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, rem! Molestias minima ea dicta aut culpa eveniet natus reiciendis, neque optio fuga hic et, voluptatem, excepturi itaque a voluptas porro!</blockquote>
-            <p>Jon Doe</p>
+        <div id="service-carousel">
+          <div class="carousel">
+<!-- add more items later -->
+            <div class="carousel-item">
+              <div class="carousel-item-content">
+                <i class="material-icons md-60 cyan-icon">forum</i>
+                <div class="quote-content">
+                  <blockquote>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, rem! Molestias minima ea dicta aut culpa eveniet natus reiciendis, neque optio fuga hic et, voluptatem, excepturi itaque a voluptas porro!"</blockquote>
+                  <p>Jon Doe</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="next-btn">
+              <button class="arrow-button">
+                <i class="material-icons-outlined md-36">keyboard_arrow_right</i>
+              </button>            
+            </div>          
+            <div class="prev-btn">
+              <button class="arrow-button">
+                <i class="material-icons-outlined md-36">keyboard_arrow_left</i>
+              </button>
+            </div>
           </div>
-          <a href="">Right arrow</a>
         </div>
       </section>
       <section class="wrapper">
