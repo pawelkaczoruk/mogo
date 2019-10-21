@@ -620,4 +620,22 @@ header li:before {
 .media-links div:hover a {
   color: white;
 }
-/* description under team members */
+
+/* logos */
+#logos {
+  width: 100%;
+  margin-top: 120px;
+}
+#logos ul {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+#logos li {
+  width: 132px;
+  min-width: 132px;
+  list-style: none;
+}
+#logos li img{
+  width: 100%;
+}
