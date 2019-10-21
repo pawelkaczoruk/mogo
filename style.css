@@ -5,6 +5,8 @@
 :root {
   --icons-color: rgb(149, 225, 211);
   --text-color: rgb(153, 153, 153);
+  --yellow-color: rgb(252, 227, 138);
+  --red-color: rgb(243, 129, 129);
 }
 body, ul, li, blockquote {
   padding: 0;
@@ -20,6 +22,11 @@ p {
   margin: 0 auto;
   padding: 0 2%;
 }
+a {
+  text-decoration: none;
+}
+
+
 /* scroll styling */
 ::-webkit-scrollbar {
   width: 12px;
@@ -51,6 +58,13 @@ p {
   font-size: 1rem;
   line-height: 0.6em;
 }
+.person-position {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 1rem;
+  line-height: 0.5em;
+}
 .text-wrap {
   margin: 0 auto;
   width: 80%;
@@ -61,7 +75,7 @@ blockquote {
 }
 
 
-/* material icons */
+/* icons */
 .md-48 { 
   font-size: 48px; 
 }
@@ -76,6 +90,9 @@ blockquote {
 }
 i {
   user-select: none;
+}
+.fa-28:before {
+  font-size: 28px;
 }
 
 /* button */
@@ -130,7 +147,6 @@ nav li {
 }
 nav li a {
   font-family: 'Montserrat', sans-serif;
-  text-decoration: none;
   text-transform: uppercase;
   color: white;
 }
@@ -139,12 +155,12 @@ nav li a i {
   margin-top: -4px;
 }
 nav li:nth-child(-n+5) a:hover {
-  color: rgb(252, 227, 138);
+  color: var(--yellow-color);
   padding-bottom: 6px;
-  border-bottom: 3px solid rgb(252, 227, 138);
+  border-bottom: 3px solid var(--yellow-color);
 }
 nav li:nth-child(n+6) a:hover {
-  color: rgb(252, 227, 138);
+  color: var(--yellow-color);
 }
 
 
@@ -189,7 +205,6 @@ header a {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   text-transform: uppercase;
-  text-decoration: none;
   margin: 0;
   padding: 0;
 }
@@ -202,9 +217,9 @@ header .learn-more {
               color 0.2s linear;
 }
 header .learn-more:hover {
-  border: 4px solid rgb(243, 129, 129);
+  border: 4px solid var(--red-color);
   background: white;
-  color: rgb(243, 129, 129);
+  color: var(--red-color);
 }
 #title-wrap:after {
   display: block;
@@ -251,38 +266,41 @@ header li:before {
 #about h2:nth-child(2):after,
 #services h2:nth-child(2):after,
 #design h2:nth-child(2):after,
-#service h2:nth-child(2):after {
+#service h2:nth-child(2):after, 
+#team h2:nth-child(2):after {
   content: '';
   display: block;
   height: 1px;
-  border-top: 4px solid rgb(243, 129, 129);
+  border-top: 4px solid var(--red-color);
   width: 70px;
   margin: 60px auto;
 }
 #about,
 #services,
 #design,
-#service {
+#service,
+#team {
   padding-top: 90px;
 }
 
 
-/* about */
-#about-images {
+/* about and team images*/
+#about-images,
+#team-people {
   margin-top: 120px;
   display: flex;
   position: relative;
   justify-content: space-between;
 }
-#about-images .images img {
+.images img {
   max-width: 30vw;
   display: block;
 }
-#about-images .images {
+.images {
   position: relative;
   transition: transform 0.2s linear;
 }
-#about-images .images:before {
+.images:before {
   content: '';
   position: absolute;
   top: 0;
@@ -291,15 +309,21 @@ header li:before {
   bottom: 0;
   z-index: 1;
 }
-#about-images .images:hover {
+.images:hover {
   transform: translate(-9px, -9px);
 }
-#about-images .images:hover::before{
+.images:hover::before {
   background-image: linear-gradient(rgba(234, 131, 131, 0.9), rgba(240, 217, 138, 0.9));
 }
-#about-images .shadow {
+.shadow {
   background: var(--icons-color);
 }
+#about-images .images:hover .description,
+#team-people .images:hover .media-links {
+  display: block;
+}
+
+/* about images description content styling */
 #about-images .description {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
@@ -317,9 +341,7 @@ header li:before {
   color: white;
   font-size: 1.3rem;
 }
-#about-images .images:hover .description{
-  display: block;
-}
+
 
 
 /* statistics */
@@ -562,12 +584,40 @@ header li:before {
   display: inline-block;
   width: 50px;
   height: 1px;
-  border-top: 3px solid rgb(243, 129, 129);
+  border-top: 3px solid var(--red-color);
   margin-right: 17px;
 }
 
-/* to do
 
-set user select none on icons
-
-*/
+/* team media links styling*/
+.media-links {
+  width: 100%;
+  z-index: 2;
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.media-links div {
+  background: var(--yellow-color);
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+}
+.media-links i { 
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.media-links a {
+  color: var(--red-color);
+}
+.media-links div:hover {
+  background: var(--red-color);
+}
+.media-links div:hover a {
+  color: white;
+}
+/* description under team members */
