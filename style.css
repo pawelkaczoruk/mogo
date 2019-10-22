@@ -272,7 +272,8 @@ header li:before {
 #team h2:nth-child(2):after,
 #work h2:nth-child(2):after,
 #clients h2:nth-child(2):after,
-#blog h2:nth-child(2):after {
+#blog h2:nth-child(2):after,
+#map .text-n:after {
   content: '';
   display: block;
   height: 1px;
@@ -714,6 +715,7 @@ header li:before {
   font-size: 0.9rem;
 }
 .work-images h4 {
+  color: white;
   font-size: 0.9rem;
   line-height: 1rem;
   margin-bottom: 9px;
@@ -830,4 +832,43 @@ header li:before {
 }
 .blog-comments {
   margin-left: 8px;
+}
+
+/* map */
+#map {
+  margin-top: 120px;
+  cursor: pointer;
+  position: relative;
+  width: 100%;
+  height: 200px;
+  color: var(--red-color);
+}
+#map:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;  
+  height: 100%;
+  width: 100%;
+  background: url(images/map.jpg) no-repeat center center;
+  background-size: cover;
+  z-index: -1;
+  opacity: 0.18;
+}
+#map .wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#map .text-n {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  margin-bottom: 0;
+}
+#map .text-n:after {
+  margin-top: 24px;
+  margin-bottom: 0;
 }
