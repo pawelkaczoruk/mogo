@@ -56,14 +56,14 @@ a {
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   font-size: 1rem;
-  line-height: 0.6em;
+  line-height: 1em;
 }
 .person-position {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-style: italic;
   font-size: 1rem;
-  line-height: 0.5em;
+  line-height: 1em;
 }
 .text-wrap {
   margin: 0 auto;
@@ -268,7 +268,8 @@ header li:before {
 #design h2:nth-child(2):after,
 #service h2:nth-child(2):after, 
 #team h2:nth-child(2):after,
-#work h2:nth-child(2):after {
+#work h2:nth-child(2):after,
+#clients h2:nth-child(2):after {
   content: '';
   display: block;
   height: 1px;
@@ -655,16 +656,16 @@ header li:before {
   flex-wrap: wrap;
   overflow: hidden;
 }
-.column {
+#work .column {
   flex: 25%;
   max-width: 25%;
 }
-.column img {
+#work .column img {
   vertical-align: middle;
   width: 100%;
   height: 50%;
 }
-.column:nth-child(3) img {
+#work .column:nth-child(3) img {
   height: 100%;
 }
 /* hover effects */
@@ -712,4 +713,64 @@ header li:before {
   font-size: 0.9rem;
   line-height: 1rem;
   margin-bottom: 9px;
+}
+
+
+/* clients */
+#clients {
+  width: 100%;
+  margin-top: 60px;
+  position: relative;
+}
+#clients:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('images/backgroundClients.jpg') no-repeat center center;
+  background-size: cover;
+  opacity: 0.16;
+  z-index: -1;
+}
+#clients .wrapper {
+  padding-top: 60px;
+}
+#clients .row {
+  justify-content: space-between;
+}
+#clients .column {
+  flex: 47%;
+  max-width: 47%;
+}
+#clients .opinion {
+  margin-bottom: 40px;
+  text-align: left;
+}
+#clients .column img {
+  width: 100px;
+  float: left;
+}
+#clients .description {
+  float: right;
+  width: calc(100% - 150px);
+  margin-left: 30px;
+}
+#clients .opinion:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+#clients .person-position:after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 1px;
+  border-top: 3px solid var(--red-color);
+  margin-top: 16px;
+}
+#clients .text-title {
+  margin-top: 0;
 }
