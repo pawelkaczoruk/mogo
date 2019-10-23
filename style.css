@@ -96,6 +96,9 @@ i {
 .fa-28:before {
   font-size: 28px;
 }
+.fa-18:before {
+  font-size: 18px;
+}
 
 /* button */
 .arrow-button {
@@ -872,3 +875,110 @@ header li:before {
   margin-top: 24px;
   margin-bottom: 0;
 }
+
+
+/* footer */
+footer {
+  background: rgb(248, 248, 248);
+}
+footer h2 {
+  color: rgb(204, 204, 204);
+  user-select: none;
+  margin-top: 16px;
+  margin-bottom: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  width: 100%;
+  text-align: left;
+}
+
+/* copyright */
+#copyright .text-title {
+  text-transform: none;
+  font-weight: bold;
+  font-size: .9rem;
+}
+#copyright .row {
+  justify-content: space-between;
+}
+#contact-column {
+  flex: 37%;
+  max-width: 37%;
+}
+#blogs-column,
+#ig-column {
+  flex: 30%;
+  max-width: 30%;
+}
+
+
+#contact-column p {
+  text-align: left;
+  margin-bottom: 40px;
+}
+#contact-column .text-n {
+  text-transform: none;
+  font-size: 1.25rem;
+}
+#contact-column .text-title {
+  text-transform: none;
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+#contact-column .text-title:after {
+  display: block;
+  content: '';
+  height: 1px;
+  width: 100%;
+  border-top: 1px solid rgba(153, 153, 153, 0.28);
+  margin-top: 20px;
+}
+#contact-column .cursive-text {
+  margin: 0 0 30px 0;
+  display: inline-block;
+}
+#contact-column i {
+  margin-left: 9px;
+}
+#our-media {
+  text-align: left;
+}
+/* subscription form */
+#contact-form form {
+  text-align: left;
+}
+#contact-form input {
+  border: 1px solid rgba(153, 153, 153, 0.28);
+  padding: 7px 5px;
+  outline-color: var(--icons-color);
+}
+#contact-form button {
+  outline: none;
+  border: none;
+  background: var(--icons-color);
+  color: white;
+  padding: 10px 20px;
+  margin-left: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  transition: background .2s linear,
+              color .2s linear;
+}
+#contact-form button:hover {
+  padding: 7px 17px;
+  background: white;
+  color: var(--icons-color);
+  border: 3px solid var(--icons-color);
+
+
+
+/* to do
+
+add division line under each blog in blogs section
+
+
+*/

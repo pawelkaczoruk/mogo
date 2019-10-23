@@ -610,18 +610,31 @@
     </main> 
     <footer>
       <div class="wrapper">
-        <div>
+        <div class="row">
+          <div id="contact-column">
             <h2>MoGo</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus nesciunt sit hic distinctio laudantium, earum animi libero ipsa fugit aut quisquam illum dolores explicabo voluptatum repudiandae officia delectus praesentium nemo.</p>
-            <p><span>15k</span> followers</p>
-            <p>Follow us:</p>
-            <!-- add media icons later-->
-            <form>
-              <input type="email" placeholder="Your Email...">
-              <button>Subscribe</button>
-            </form>
+            <p class="text-title"><span class="text-n">15k</span> followers</p>
+            <div id="our-media">
+              <p class="cursive-text">Follow us:</p>
+              <a title="Facebook" href=""><i class="fab fa-facebook-f cyan-icon fa-18"></i></a>
+              <a title="Twitter" href=""><i class="fab fa-twitter cyan-icon fa-18"></i></a>
+              <a title="Instagram" href=""><i class="fab fa-instagram cyan-icon fa-18"></i></a>
+              <a title="Pinterest" href=""><i class="fab fa-pinterest-p cyan-icon fa-18"></i></a>
+              <a title="Google+" href=""><i class="fab fa-google-plus-g cyan-icon fa-18"></i></a>
+              <a title="Youtube" href=""><i class="fab fa-youtube cyan-icon fa-18"></i></a>
+              <a title="Dribble" href=""><i class="fab fa-dribbble cyan-icon fa-18"></i></a>
+              <a title="Tumblr" href=""><i class="fab fa-tumblr cyan-icon fa-18"></i></a>
+            </div>
+            <div id="contact-form">
+              <form>
+                <input class="cursive-text" type="email" placeholder="Your Email...">
+                <button>Subscribe</button>
+              </form>           
+            </div>
+
           </div>
-          <div>
+          <div id="blogs-column">
             <h3>Blogs</h3>
             <ul>
               <li>
@@ -641,7 +654,7 @@
               </li>
             </ul>
           </div>
-          <div>
+          <div id="ig-column">
             <h3>Instagram</h3>
             <ul>
               <li>
@@ -674,10 +687,12 @@
             </ul>
             <p>View more photos</p>
           </div>
-          <div>
-            <p>&copy; MoGo free PSD template by Laaqiq. Coded by Pawel Kaczoruk</p>
-          </div>
+        </div>
+        <div id="copyright">
+          <p class="text-title">&copy; MoGo free PSD template by Laaqiq. Coded by Pawel Kaczoruk</p>
+        </div>        
       </div>
+
     </footer>
     <script src="main.js"></script>
   </body>
