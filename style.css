@@ -514,17 +514,21 @@ header li:before {
   margin-top: 21px;
 }
 .collapsible-text {
-  display: none; 
+  max-height: 0;
   height: 192px;
   overflow-y: scroll;
   overflow-x: hidden;
-  border-bottom: 2px solid rgba(153, 153, 153, 0.28);
+  border-bottom: 0;
+  transition: max-height .3s ease-in-out;
+}
+.collapsible-text p {
   margin: 0 5px;
 }
 .active {
   margin: 0;
   padding: 0 5px;
-  display: block;
+  max-height: 177px;
+  border-bottom: 2px solid rgba(153, 153, 153, 0.28);
 }
 .collapsible-text::-webkit-scrollbar-track {
   box-shadow: none;
