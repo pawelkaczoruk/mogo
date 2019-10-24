@@ -475,6 +475,7 @@ header li:before {
 #service-wrap {
   margin-top: 120px;
 }
+
 #collapsible-set {
   text-align: left;
   float: right;
@@ -503,6 +504,9 @@ header li:before {
 .collapsible .arrow-button {
   float: right;
   margin-top: 5px;
+}
+#collapsible-set .collapsible:first-child button {
+  cursor: default;
 }
 .collapsible-title:after {
   display: block;

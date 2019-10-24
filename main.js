@@ -16,6 +16,8 @@ function expand(elem) {
   // set active button to disabled and rest to enabled
   for(var i=0; i < all.length; i++) {
     all[i].getElementsByTagName('button')[0].disabled = false;
+    all[i].getElementsByTagName('button')[0].style.cursor = 'pointer';
   }
   elem.disabled = true;
+  elem.style.cursor = 'default';
 }
