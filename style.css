@@ -7,6 +7,7 @@
   --text-color: rgb(153, 153, 153);
   --yellow-color: rgb(252, 227, 138);
   --red-color: rgb(243, 129, 129);
+  --dark-icon-color: rgb(121, 177, 167);
 }
 body, ul, li, blockquote {
   padding: 0;
@@ -290,7 +291,8 @@ header li:before {
 #service,
 #team,
 #work,
-#blog {
+#blog,
+#contact {
   padding-top: 90px;
 }
 
@@ -824,6 +826,16 @@ header li:before {
 .blog-intro {
   text-align: left;
 }
+.blog-intro .text-title:hover {
+  cursor: pointer;
+}
+.blog-intro:after {
+  content: '';
+  display: block;
+  height: 1px;
+  width: 100%;
+  border-top: 1px solid rgba(153, 153, 153, 0.28);
+}
 .blog-stats {
   text-align: left;
 }
@@ -882,6 +894,7 @@ footer {
   background: rgb(248, 248, 248);
 }
 footer .row {
+  margin-top: 0;
   justify-content: space-between;
 }
 #contact-column {
@@ -938,6 +951,9 @@ footer h2 {
 #contact-column i {
   margin-left: 9px;
 }
+#contact-column a:hover i {
+  color: var(--dark-icon-color);
+}
 #our-media {
   text-align: left;
 }
@@ -967,8 +983,8 @@ footer h2 {
 #contact-form button:hover {
   padding: 7px 17px;
   background: white;
-  color: var(--icons-color);
-  border: 3px solid var(--icons-color);
+  color: var(--dark-icon-color);
+  border: 3px solid var(--dark-icon-color);
 }
 
 /* blogs column */
@@ -980,6 +996,9 @@ footer h2 {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
+}
+#blogs-column .blog-item:hover {
+  cursor: pointer;
 }
 #blogs-column .blog-text .text-title {
   font-weight: bold;
@@ -1026,11 +1045,3 @@ footer h2 {
   font-weight: bold;
   font-size: .9rem;
 }
-
-
-/* to do
-
-add division line under each blog in blogs section
-change text on hover in works section
-
-*/
