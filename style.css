@@ -659,8 +659,8 @@ header li:before {
   width: 100%;
 }
 #logos li {
-  width: 132px;
-  min-width: 132px;
+  width: 11%;
+  min-width: 11%;
   list-style: none;
 }
 #logos li img{
@@ -882,7 +882,6 @@ header li:before {
 }
 #map .wrapper {
   height: 100%;
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
