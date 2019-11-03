@@ -4,7 +4,7 @@ function expand(elem) {
   const expanded = document.getElementsByClassName('active'),
         activeBtn = expanded[0].previousElementSibling.getElementsByTagName('button'),
         all = document.getElementsByClassName('collapsible-title');
-
+  
   // expand and shrink
   expanded[0].classList.toggle('active');
   elem.parentNode.nextElementSibling.classList.toggle('active')
@@ -74,4 +74,43 @@ function startCounting(el, start, end, duration) {
   // run count up function
   timer = setInterval(run, stepTime);
   run();
+}
+
+
+/*                   CAROUSEL                    */
+
+// get li elemets
+const liServ = document.querySelectorAll('#service-carousel ul li'),
+      liTeam = document.querySelectorAll('#team-carousel ul li');
+// add index var
+let indexS = 0,
+    indexT = 0;
+
+function show(direction, el) {
+  let index, li;
+
+  // check which carousel was activated, set proper variables
+  if(el == 'serv') {
+    li = liServ;
+    index = indexS;
+  } else if(el == 'team') {
+    li = liTeam;
+    index = indexT;
+  }
+
+  // get previous index value
+  const prevIndex = index;
+
+  // modify index value
+  direction == 'next' ? index++ : index--;
+
+  // deal with last and first element wrapping around
+  index = index >= li.length ? 0 : (index < 0 ? li.length -1 : index);
+
+  // toggle active class on new and old element, add class for leaving element
+  li[prevIndex].classList.toggle('active');
+  li[index].classList.toggle('active');
+
+  // update index value
+  el == 'serv' ? indexS = index : indexT = index;
 }

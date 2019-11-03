@@ -238,27 +238,65 @@
         </div>
         <div id="service-carousel">
           <div class="carousel">
-<!-- add more items later -->
-            <div class="carousel-item">
-              <div class="carousel-item-content">
-                <i class="material-icons md-60 cyan-icon">forum</i>
-                <div class="quote-content">
-                  <blockquote>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, rem! Molestias minima ea dicta aut culpa eveniet natus reiciendis, neque optio fuga hic et, voluptatem, excepturi itaque a voluptas porro!"</blockquote>
-                  <p>Jon Doe</p>
+
+            <ul>
+              <li class="active">
+                <div class="carousel-item">
+                  <div class="carousel-item-content">
+                    <i class="material-icons md-60 cyan-icon">forum</i>
+                    <div class="quote-content">
+                      <blockquote>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, rem! Molestias minima ea dicta aut culpa eveniet natus reiciendis, neque optio fuga hic et, voluptatem, excepturi itaque a voluptas porro!"</blockquote>
+                      <p>Jon Doe</p>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
+              </li>
+              <li>
+                <div class="carousel-item">
+                  <div class="carousel-item-content">
+                    <i class="material-icons md-60 cyan-icon">extension</i>
+                    <div class="quote-content">
+                      <blockquote>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis odit adipisci doloremque minima aut maiores iste placeat enim distinctio, nihil doloribus, autem alias explicabo sit molestias aliquam aliquid fugit perferendis."</blockquote>
+                      <p>Matthew Dix</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="carousel-item">
+                  <div class="carousel-item-content">
+                    <i class="material-icons md-60 cyan-icon">event_seat</i>
+                    <div class="quote-content">
+                      <blockquote>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, possimus. Officia iste laborum, pariatur eius recusandae autem quo aliquid eaque ullam harum quisquam delectus asperiores, quibusdam saepe? Debitis, exercitationem recusandae?"</blockquote>
+                      <p>Michael Fertig</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="carousel-item">
+                  <div class="carousel-item-content">
+                    <i class="material-icons md-60 cyan-icon">face</i>
+                    <div class="quote-content">
+                      <blockquote>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptatum possimus sapiente quae asperiores cumque quisquam accusamus, ratione expedita at tenetur id soluta dolor perferendis est velit aut maxime quas."</blockquote>
+                      <p>Christopher Campbell</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
 
             <div class="next-btn">
-              <button class="arrow-button">
+              <button class="arrow-button" onclick="show('next', 'serv')">
                 <i class="material-icons-outlined md-36">keyboard_arrow_right</i>
               </button>            
             </div>          
-            <div class="prev-btn">
-              <button class="arrow-button">
+            <div class="prev-btn" >
+              <button class="arrow-button" onclick="show('prev', 'serv')">
                 <i class="material-icons-outlined md-36">keyboard_arrow_left</i>
               </button>
             </div>
+
           </div>
         </div>
       </section>
@@ -441,26 +479,54 @@
           </div>
 
         </div>
+        
         <div class="wrapper">
           <div id="team-carousel">
             <div class="carousel">
-              <div class="carousel-item">
-                <div class="carousel-item-content">
-                  <img src="images/quotePerson1.jpg" alt="Joshua Erle picture">
-                  <div class="quote-content">
-                    <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam porro accusantium culpa temporibus optio at quo, quam eos consequatur cum perferendis modi eius expedita! Pariatur optio quas dolore assumenda deleniti?</blockquote>
-                    <p>Joshua Erle</p>
+
+              <ul>
+                <li class="active">
+                  <div class="carousel-item">
+                    <div class="carousel-item-content">
+                      <img src="images/quotePerson1.jpg" alt="Joshua Erle picture">
+                      <div class="quote-content">
+                        <blockquote>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam porro accusantium culpa temporibus optio at quo, quam eos consequatur cum perferendis modi eius expedita! Pariatur optio quas dolore assumenda deleniti?"</blockquote>
+                        <p>Joshua Erle</p>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
+                </li>
+                <li>
+                  <div class="carousel-item">
+                    <div class="carousel-item-content">
+                      <img src="images/quotePerson2.jpg" alt="Matthew Dix picture">
+                      <div class="quote-content">
+                        <blockquote>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate dolorum maiores similique fugit harum, impedit aperiam eligendi, repudiandae consectetur esse reiciendis corrupti ab praesentium eos quasi cum iusto dolor tempora?"</blockquote>
+                        <p>Nick Karvounis</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="carousel-item">
+                    <div class="carousel-item-content">
+                      <img src="images/quotePerson3.jpg" alt="Christopher Campbell picture">
+                      <div class="quote-content">
+                        <blockquote>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo necessitatibus totam nam modi placeat quaerat, quis neque impedit natus adipisci odit sint ea consequatur quia, dolore perferendis earum dolorum ad!"</blockquote>
+                        <p>Christopher Campbell</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
 
               <div class="next-btn">
-                <button class="arrow-button">
+                <button class="arrow-button" onclick="show('next', 'team')">
                   <i class="material-icons-outlined md-36">keyboard_arrow_right</i>
                 </button>            
               </div>          
               <div class="prev-btn">
-                <button class="arrow-button">
+                <button class="arrow-button" onclick="show('prev', 'team')"">
                   <i class="material-icons-outlined md-36">keyboard_arrow_left</i>
                 </button>
               </div>

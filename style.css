@@ -529,7 +529,7 @@ header li:before {
 .collapsible-text p {
   margin: 0 5px;
 }
-.active {
+#collapsible-set .active {
   margin: 0;
   padding: 0 5px;
   max-height: 177px;
@@ -542,7 +542,7 @@ header li:before {
   width: 7px
 }
 
-/* carousels */
+/* carousels */ 
 #service-carousel,
 #team-carousel {
   margin-top: 120px;
@@ -552,7 +552,30 @@ header li:before {
 .carousel {
   height: 100%;
   width: 100%;
+  display: flex;
 }
+.carousel ul {
+  order: 2;
+  height: 100%;
+  min-width: calc(100% - 80px);
+  flex: calc(100% - 80px);
+  display: flex;
+  overflow: hidden;
+  list-style: none;
+}
+.carousel li {
+  display: block;
+  opacity: 0;
+  min-width: 100%;
+  transition: opacity 1s ease-out,
+              order ease-out .5s;
+}
+.carousel ul li.active {
+  order: -1;
+  opacity: 1;
+}
+
+
 .carousel-item {
   height: 100%;
   display: inline-block;
@@ -567,13 +590,15 @@ header li:before {
 }
 .next-btn,
 .prev-btn {
-  width: 40px;
+  flex: 40px;
+  min-width: 40px;
   height: 100%;
   display: flex;
   justify-content: center;
 }
 .next-btn {
   float: right;
+  order: 3;
 }
 .prev-btn {
   float: left;
