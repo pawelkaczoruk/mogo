@@ -1,14 +1,44 @@
+/*                   HEADER                    */
+
+const headerTitles = document.querySelectorAll('#titles-container li');
+const header = document.querySelector('header');
+const backgrounds = [
+  'url(images/bannerBackground1.jpg)',
+  'url(images/bannerBackground2.jpg)',
+  'url(images/bannerBackground3.jpg)',
+  'url(images/bannerBackground4.jpg)'
+];
+let current = 0;
+setInterval(() => {
+  headerTitles[current].classList.toggle('active');
+  switch(current) {
+    case 0: 
+    case 1:
+    case 2:
+      current++;
+      break;
+    case 3:
+      current = 0;
+      break;
+    default:
+      current = 0;
+  }
+  headerTitles[current].classList.toggle('active');
+  header.style.backgroundImage = backgrounds[current];
+}, 6000);
+
+
 /*                   COLLAPSIBLE                    */
 
 // collapsible expanding and shrinking
 function expand(elem) {
   // get active element
-  const expanded = document.getElementsByClassName('active'),
-        activeBtn = expanded[0].previousElementSibling.getElementsByTagName('button'),
+  const expanded = document.querySelector('#collapsible-set .active');
+        activeBtn = expanded.previousElementSibling.getElementsByTagName('button'),
         all = document.getElementsByClassName('collapsible-title');
   
   // expand and shrink
-  expanded[0].classList.toggle('active');
+  expanded.classList.toggle('active');
   elem.parentNode.nextElementSibling.classList.toggle('active')
 
   // change button icons
