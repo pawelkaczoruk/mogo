@@ -1,3 +1,5 @@
+/*                   COLLAPSIBLE                    */
+
 // collapsible expanding and shrinking
 function expand(elem) {
   // get active element
@@ -21,6 +23,10 @@ function expand(elem) {
   elem.disabled = true;
   elem.style.cursor = 'default';
 }
+
+
+
+/*                   COUNTER                    */
 
 // get all elements that should be counted up
 const statistics = document.getElementById('statistics'),
@@ -77,6 +83,7 @@ function startCounting(el, start, end, duration) {
 }
 
 
+
 /*                   CAROUSEL                    */
 
 // get li elemets
@@ -114,3 +121,27 @@ function show(direction, el) {
   // update index value
   el == 'serv' ? indexS = index : indexT = index;
 }
+
+
+/*                   MAP                    */
+
+const mapOpen = document.getElementById('open-map');
+const mapClose = document.getElementById('map-close');
+const container = document.getElementById('map');
+const mapContainer = document.getElementById('g-map');
+
+// map opening
+mapOpen.addEventListener('click', () => {
+  container.style.height = '400px';
+  mapContainer.style.display = 'block';
+  mapOpen.style.display = 'none';
+  mapClose.style.display = 'block';
+});
+
+// map closing
+mapClose.addEventListener('click', () => {
+  container.style.height = '200px';
+  mapContainer.style.display = 'none';
+  mapOpen.style.display = 'flex';
+  mapClose.style.display = 'none';
+});
