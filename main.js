@@ -39,7 +39,7 @@ window.addEventListener('scroll', () => {
     if(isVisible === false) {
       isVisible = true;
       for(let i = 0; i < statItems.length; i++) {
-        startCounting(statItems[i], 0, Number(statItems[i].innerHTML), 3000)
+        startCounting(statItems[i], 0, Number(statItems[i].innerHTML), 2000)
       }
     }
   }
