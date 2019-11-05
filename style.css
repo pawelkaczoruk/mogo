@@ -259,35 +259,53 @@ header .learn-more:hover {
 
 
 /* bars and their description */
-header .table {
-  display: table;
-  margin: 0 auto;
-  margin-top: 10%;
+#indicators {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  overflow: hidden;
+  margin: 65px auto 0 auto;
 }
-header .table li {
+#indicators .item {
   width: 150px;
+  max-width: 22%;
+  flex: 22%;
+}
+#indicators .progress-bar {
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  background: white;
+}
+#indicators .item p {
+  margin-bottom: 0;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.25rem;
-  list-style: none;
   line-height: 2.5rem;
   text-transform: uppercase;
-  float: left;
-  margin-left: 70px;
+  color: white;
+  text-align: left;
 }
-header .table li:first-child {
-  margin-left: 0;
-}
-header .table li span {
+#indicators .item span {
   font-weight: bold;
   font-size: 1.3125rem;
 }
-header .table li:before {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 1px;
-  border-top: 4px solid white;
-  margin: 0 auto;
+/* filling animation */
+#indicators .fill {
+  width: 0;
+  height: 100%;
+  background: var(--red-color);
+}
+@keyframes fillFromLeft {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+#indicators .fill.active {
+  animation: 6s linear fillFromLeft;
 }
 
 

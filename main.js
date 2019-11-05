@@ -1,16 +1,23 @@
 /*                   HEADER                    */
 
-const headerTitles = document.querySelectorAll('#titles-container li');
-const header = document.querySelector('header');
-const backgrounds = [
+const headerTitles = document.querySelectorAll('#titles-container li'),
+      progressBars = document.querySelectorAll('#indicators .fill'),
+      header = document.querySelector('header'),
+      backgrounds = [
   'url(images/bannerBackground1.jpg)',
   'url(images/bannerBackground2.jpg)',
   'url(images/bannerBackground3.jpg)',
   'url(images/bannerBackground4.jpg)'
 ];
 let current = 0;
+
+// header animations
 setInterval(() => {
+  // remove active class from previously active elements
+  progressBars[current].classList.toggle('active');
   headerTitles[current].classList.toggle('active');
+  
+  // modify current index value
   switch(current) {
     case 0: 
     case 1:
@@ -23,9 +30,15 @@ setInterval(() => {
     default:
       current = 0;
   }
+
+  // add new active class to next progress bar
+  progressBars[current].classList.toggle('active');
+
+  // add active class to next header title and set new background image
   headerTitles[current].classList.toggle('active');
   header.style.backgroundImage = backgrounds[current];
 }, 6000);
+
 
 
 /*                   COLLAPSIBLE                    */
