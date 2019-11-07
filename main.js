@@ -1,3 +1,8 @@
+/*                   HAMBURGER                    */
+function hamburger(el) {
+  el.classList.toggle('active');
+}
+
 /*                   HEADER                    */
 
 const headerTitles = document.querySelectorAll('#titles-container li'),

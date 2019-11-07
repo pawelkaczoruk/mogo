@@ -114,13 +114,16 @@ i {
 }
 
 
-/* navbar linear-gradient(rgba(231, 123, 123, 0.9), rgba(221, 119, 88, 0.9)); */
+/* navbar */
 nav {
   background-image: linear-gradient(rgba(179, 152, 152, 0.9),rgba(168, 147, 147, 0.9)); 
   position: fixed;
   width: 100%;
   height: 54px;
   z-index: 5;
+}
+nav .wrapper {
+  height: 100%;
 }
 nav h1 {
   user-select: none;
@@ -132,7 +135,7 @@ nav h1 {
   color: white;
   float: left;
 }
-nav .main-nav {
+#main-nav {
   float: right;
   height: 54px;
 }
@@ -1146,4 +1149,92 @@ footer h2 {
   text-transform: none;
   font-weight: bold;
   font-size: .9rem;
+}
+
+
+/* navbar hamburger menu */
+#hamburger {
+  position: absolute;
+  right: 2%;
+  margin-top: 15px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  display: none;
+}
+#hamburger:focus #hamburger-container {
+  box-shadow: 0 0 1px 1px #51a7e8;
+}
+#hamburger:focus,
+#hamburger-container:focus {
+  outline: none;
+}
+#hamburger-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 24px;
+  width: 40px;
+}
+.hamburger-bars {
+  position: absolute;
+  height: 4px;
+  width: 100%;  
+  border-radius: 6px;
+  background: white;
+  transition: transform .2s ease-in-out;
+}
+.hamburger-bars:before,
+.hamburger-bars:after {
+  display: block;
+  content: '';
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  border-radius: 6px;
+  background: white;
+}
+.hamburger-bars:before {
+  top: -10px;
+  transition: top .1s ease-out .2s,
+            transform .2s ease-in-out;
+}
+.hamburger-bars:after {
+  bottom: -10px;
+  transition: bottom .1s ease-out .2s;
+}
+#hamburger.active .hamburger-bars {
+  transform: rotate(45deg);
+  transition: transform .2s ease-in-out .1s;
+}
+#hamburger.active .hamburger-bars:before {
+  top: 0;
+  transform: rotate(-90deg);
+  transition: top .1s ease-in,
+              transform .2s ease-in-out .1s;
+}
+#hamburger.active .hamburger-bars:after {
+  bottom: 0;
+  transition: bottom .1s ease-in;
+}
+#hamburger-menu {
+  display: none;
+}
+
+
+/* media queries */
+
+@media screen and (max-width: 1024px) {
+  #hamburger {
+    display: inline-block;
+  }
+  #main-nav {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  nav a {
+    display: inline-block;
+  }
 }
