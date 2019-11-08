@@ -164,12 +164,12 @@ nav li a i {
   vertical-align: middle;
   margin-top: -4px;
 }
-nav li:nth-child(-n+5) a:hover {
+#main-nav li:nth-child(-n+5) a:hover {
   color: var(--yellow-color);
   padding-bottom: 6px;
   border-bottom: 3px solid var(--yellow-color);
 }
-nav li:nth-child(n+6) a:hover {
+#main-nav li:nth-child(n+6) a:hover {
   color: var(--yellow-color);
 }
 
@@ -1219,6 +1219,12 @@ footer h2 {
   transition: bottom .1s ease-in;
 }
 #hamburger-menu {
+  width: 100%;
+  height: 100%;
+  display: none;
+  background: black;
+}
+#hamburger-menu.active {
   display: none;
 }
 
@@ -1231,6 +1237,9 @@ footer h2 {
   }
   #main-nav {
     display: none;
+  }
+  #hamburger-menu.active {
+    display: block;
   }
 }
 @media screen and (max-width: 768px) {

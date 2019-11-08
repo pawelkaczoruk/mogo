@@ -1,7 +1,21 @@
 /*                   HAMBURGER                    */
-function hamburger(el) {
-  el.classList.toggle('active');
+const menu = document.getElementById('hamburger-menu');
+const hb = document.getElementById('hamburger');
+
+function hamburger() {
+  hb.classList.toggle('active');
+  menu.classList.toggle('active');
 }
+
+const content = document.querySelectorAll('header, main, footer, #hamburger-menu a');
+for(const el of content) {
+  el.addEventListener('click', () => {
+    hb.classList.remove('active');
+    menu.classList.remove('active');
+  });
+}
+
+
 
 /*                   HEADER                    */
 
