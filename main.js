@@ -2,11 +2,12 @@
 const menu = document.getElementById('hamburger-menu');
 const hb = document.getElementById('hamburger');
 
+// toggle hamburger menu
 function hamburger() {
   hb.classList.toggle('active');
   menu.classList.toggle('active');
 }
-
+// close hamburger menu when user clicks out of navbar
 const content = document.querySelectorAll('header, main, footer, #hamburger-menu a');
 for(const el of content) {
   el.addEventListener('click', () => {
