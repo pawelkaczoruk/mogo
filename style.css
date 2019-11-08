@@ -453,6 +453,7 @@ header .learn-more:hover {
   float: left;
   width: 32%;
   margin-bottom: 80px;
+  overflow: hidden;
 }
 #services li:nth-child(2),
 #services li:nth-child(5) {
@@ -480,6 +481,7 @@ header .learn-more:hover {
   width: 100%;
   height: 450px;
   position: relative;
+  overflow: hidden;
 }
 #design-background:after {
   content: '';
