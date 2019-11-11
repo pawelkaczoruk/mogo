@@ -1157,9 +1157,11 @@ footer h2 {
 
 #copyright .text-title {
   margin-top: 45px;
+  margin-bottom: 0;
+  padding-bottom: 14px;
   text-transform: none;
   font-weight: bold;
-  font-size: .9rem;
+  font-size: .875rem;
 }
 
 
