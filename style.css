@@ -1028,7 +1028,6 @@ header .learn-more:hover {
 
 /* footer */
 footer {
-  margin-top: 90px;
   background: rgb(248, 248, 248);
 }
 footer .row {
@@ -1395,6 +1394,44 @@ footer h2 {
   /* navbar */
   nav a {
     display: inline-block;
+  }
+
+  /* sections styling */
+  #about h2:nth-child(2):after,
+  #services h2:nth-child(2):after,
+  #design h2:nth-child(2):after,
+  #service h2:nth-child(2):after, 
+  #team h2:nth-child(2):after,
+  #work h2:nth-child(2):after,
+  #clients h2:nth-child(2):after,
+  #blog h2:nth-child(2):after,
+  #map .text-n:after {
+    margin: 45px auto;
+  }
+  #about,
+  #services,
+  #service,
+  #team,
+  #work,
+  #blog,
+  #contact {
+    padding-top: 50px;
+  }
+  #statistics,
+  #service-wrap,
+  #service-carousel,
+  #team-carousel,
+  #team-people,
+  #logos,
+  #work .row,
+  #clients .row,
+  #blog .row,
+  #map {
+    margin-top: 50px;
+  }
+  #design {
+    margin-top: 10px;
+    padding-top: 0;
   }
 
   /* about */
