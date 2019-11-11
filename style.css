@@ -381,9 +381,15 @@ header .learn-more:hover {
 .images:hover:before {
   background-image: linear-gradient(rgba(234, 131, 131, 0.9), rgba(240, 217, 138, 0.9));
 }
-.shadow {
+#about-images .shadow {
   flex: 32%;
   max-width: 32%;
+  background: var(--icons-color);
+}
+#team-people .team-container {
+  max-width: 32%;
+}
+#team-people .shadow {
   background: var(--icons-color);
 }
 #about-images .images:hover .description,
