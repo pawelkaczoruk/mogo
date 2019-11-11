@@ -45,14 +45,14 @@ a {
 .text-c {
   font-family: 'Kaushan Script', cursive;
   font-size: 1.875rem;
-  line-height: 0.6em;
+  line-height: 1.875rem;
 }
 .text-n {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   font-size: 1.875rem;
-  line-height: 0.6em;
+  line-height: 1.875rem;
 }
 .text-title {
   color: rgb(51, 51, 51);
