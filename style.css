@@ -345,8 +345,7 @@ header .learn-more:hover {
 #service,
 #team,
 #work,
-#blog,
-#contact {
+#blog {
   padding-top: 90px;
 }
 
@@ -1029,6 +1028,7 @@ header .learn-more:hover {
 
 /* footer */
 footer {
+  margin-top: 90px;
   background: rgb(248, 248, 248);
 }
 footer .row {
@@ -1613,6 +1613,29 @@ footer h2 {
   }
 }
 
+@media screen and (max-width: 480px) {
+  /* footer */
+  #blogs-column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  #ig-column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  #ig-column .column {
+    flex: 32.5%;
+    max-width: 32.5%;
+  }
+  #ig-column .column:last-child {
+    display: block;
+  }
+  #ig-column .column .ig-item:last-child,
+  #ig-column .column:last-child .ig-item:last-child {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 400px) {
   /* navbar */
   #hamburger-menu.active {
@@ -1639,27 +1662,6 @@ footer h2 {
     margin-bottom: 30px;
   }
   #team-people .team-container:last-child {
-    display: none;
-  }
-
-  /* footer */
-  #blogs-column {
-    flex: 100%;
-    max-width: 100%;
-  }
-  #ig-column {
-    flex: 100%;
-    max-width: 100%;
-  }
-  #ig-column .column {
-    flex: 32.5%;
-    max-width: 32.5%;
-  }
-  #ig-column .column:last-child {
-    display: block;
-  }
-  #ig-column .column .ig-item:last-child,
-  #ig-column .column:last-child .ig-item:last-child {
     display: none;
   }
 }
