@@ -448,10 +448,18 @@ header .learn-more:hover {
 }
 .stat-item {
   background: var(--icons-color);
-  width: 19.9%;
-  min-width: 120px;
-  padding: 33px 0;
+  width: 19.8%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
 }
+.stat-item h3,
+.stat-item p {
+  flex: 100%;
+  max-width: 100%;
+}
+
 
 
 /* services */
@@ -1368,6 +1376,12 @@ footer h2 {
     max-width: 45%;
   }
 
+  /* statistics */
+  #statistics .wrapper {
+    width: 100%;
+    padding: 0;
+  }
+
   /* footer */
   #ig-column .column {
     flex: calc(100% / 7 *3);
@@ -1458,6 +1472,20 @@ footer h2 {
   #about-images .shadow {
     flex: 70%;
     max-width: 70%;
+  }
+
+  /* statistics */
+  #statistics {
+    height: 250px;
+  }
+  #statistics .stat-item {
+    flex: 49.75%;
+    max-width: 49.75%;
+  }
+  #statistics .stat-item:nth-child(n+3) {
+    flex: 33%;
+    max-width: 33%;
+    margin-top: 1px;
   }
 
   /* footer */
