@@ -817,6 +817,7 @@ header .learn-more:hover {
   transform: translate(-50%, -50%);
   width: 100%;
   text-align: center;
+  user-select: none;
   transition: visibility 0s, opacity 0.5s linear;
 }
 .work-images p {
@@ -1482,6 +1483,12 @@ footer h2 {
   }
   #hamburger-menu li:nth-child(4) {
     margin-left: 0;
+  }
+
+  /* work */
+  #work .column {
+    flex: 50%;
+    max-width: 50%;
   }
 }
 
