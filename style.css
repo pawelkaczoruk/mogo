@@ -1436,6 +1436,12 @@ footer h2 {
     width: 95%;
   }
 
+  /* logos */
+  #logos li {
+    width: 16%;
+    min-width: 16%;
+  }
+
   /* footer */
   #contact-column {
     flex: 100%;
