@@ -1338,6 +1338,12 @@ footer h2 {
     margin-right: 4%;
   }
 
+  /* clients */
+  #clients .column {
+    flex: 96%;
+    max-width: 96%;
+  }
+
   /* footer */
   #ig-column .column {
     flex: 37.5%;
