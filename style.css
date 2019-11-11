@@ -1371,6 +1371,10 @@ footer h2 {
 }
 
 @media screen and (max-width: 768px) {
+  .text-wrap {
+    width: 90%;
+  }
+
   /* navbar */
   nav a {
     display: inline-block;
@@ -1410,6 +1414,23 @@ footer h2 {
 }
 
 @media screen and (max-width: 670px) {
+  /* service */
+  #service-picture {
+    width: 96%;
+    margin: 0 auto 16px auto;
+    float: none;
+    min-height: unset;
+  }
+  #service-picture img {
+    min-height: unset;
+    width: 100%;
+  }
+  #collapsible-set {
+    width: 96%;
+    margin: 0 auto;
+    float: none;
+  }
+
   /* footer */
   #contact-column {
     flex: 100%;
