@@ -1148,7 +1148,6 @@ footer h2 {
   justify-content: space-between;
 }
 #ig-column .column {
-
   flex: 32.5%;
   max-width: 32.5%;
 }
@@ -1283,6 +1282,41 @@ footer h2 {
     background: transparent;
     color: white;
   }
+
+  /* footer */
+  #blogs-column {
+    flex: 40%;
+    max-width: 40%;
+  }
+  #contact-column {
+    flex: 53%;
+    max-width: 53%;
+  }
+  #ig-column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  #ig-column .column {
+    flex: calc(100% / 3);
+    max-width: calc(100% / 3);
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  /* footer */
+  #ig-column .column {
+    flex: 37.5%;
+    max-width: 37.5%;
+  }
+  #ig-column .column:last-child {
+    flex: 25%;
+    max-width: 25%;
+  }
+  #ig-column .column:last-child .ig-item:last-child {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -1304,10 +1338,54 @@ footer h2 {
     flex: 42%;
   }
 }
+
 @media screen and (max-width: 768px) {
   /* navbar */
   nav a {
     display: inline-block;
+  }
+
+  /* footer */
+  #ig-column .column {
+    flex: calc(100% / 7 *3);
+    max-width: calc(100% / 7 *3);
+  }
+  #ig-column .column:last-child {
+    flex: calc(100% / 7);
+    max-width: calc(100% / 7);
+  }
+  #ig-column .column:last-child .ig-item:nth-child(2) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  /* footer */
+  #contact-column {
+    flex: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  #blogs-column {
+    flex: 48%;
+    max-width: 48%;
+  }
+  #ig-column {
+    flex: 48%;
+    max-width: 48%;
+  }
+  #ig-column .column {
+    flex: 32.5%;
+    max-width: 32.5%;
+    display: block;
+  }
+  #ig-column .column:last-child {
+    flex: 32.5%;
+    max-width: 32.5%;
+  }
+  #ig-column .column:last-child .ig-item:last-child,
+  #ig-column .column:last-child .ig-item:nth-child(2) {
+    display: block;
   }
 }
 
@@ -1349,6 +1427,15 @@ footer h2 {
   #indicators {
     margin-top: 0;
   }
+
+  /* footer */
+  #ig-column .column {
+    flex: 49%;
+    max-width: 49%;
+  }
+  #ig-column .column:last-child {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -1365,5 +1452,26 @@ footer h2 {
   }
   #hamburger-menu li {
     line-height: 2.8125em;
+  }
+
+  /* footer */
+  #blogs-column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  #ig-column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  #ig-column .column {
+    flex: 32.5%;
+    max-width: 32.5%;
+  }
+  #ig-column .column:last-child {
+    display: block;
+  }
+  #ig-column .column .ig-item:last-child,
+  #ig-column .column:last-child .ig-item:last-child {
+    display: none;
   }
 }
