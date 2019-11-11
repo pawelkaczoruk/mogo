@@ -1431,6 +1431,11 @@ footer h2 {
     float: none;
   }
 
+  /* carousel */
+  .carousel-item {
+    width: 95%;
+  }
+
   /* footer */
   #contact-column {
     flex: 100%;
@@ -1486,6 +1491,23 @@ footer h2 {
   #services li {
     width: 90%;
     margin-left: 5%;
+  }
+
+  /* carousel */
+  #service-carousel,
+  #team-carousel {
+    height: 400px;
+  }
+  .carousel-item {
+    width: 95%;
+  }
+  .carousel-item-content {
+    flex-wrap: wrap;
+  }
+  .carousel-item .quote-content{
+    margin-top: 16px;
+    width: 100%;
+    text-align: center;
   }
 }
 
