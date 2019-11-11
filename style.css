@@ -726,6 +726,7 @@ header .learn-more:hover {
   display: inline-block;
   width: 45px;
   height: 45px;
+  margin-top: 3px;
 }
 .media-links i { 
   height: 100%;
@@ -1522,6 +1523,14 @@ footer h2 {
     width: 100%;
     text-align: center;
   }
+
+  /* team */
+  #team-people .team-container {
+    max-width: 49%;
+  }
+  #team-people .team-container:last-child {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -1596,6 +1605,19 @@ footer h2 {
   }
   #hamburger-menu li {
     line-height: 2.8125em;
+  }
+
+  /* team */
+  #team-people {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  #team-people .team-container {
+    max-width: 70%;
+    margin-bottom: 30px;
+  }
+  #team-people .team-container:last-child {
+    display: none;
   }
 
   /* footer */
