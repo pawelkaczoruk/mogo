@@ -360,7 +360,7 @@ header .learn-more:hover {
   justify-content: space-between;
 }
 .images img {
-  max-width: 30vw;
+  max-width: 100%;
   display: block;
 }
 .images {
@@ -382,6 +382,8 @@ header .learn-more:hover {
   background-image: linear-gradient(rgba(234, 131, 131, 0.9), rgba(240, 217, 138, 0.9));
 }
 .shadow {
+  flex: 32%;
+  max-width: 32%;
   background: var(--icons-color);
 }
 #about-images .images:hover .description,
@@ -1347,6 +1349,19 @@ footer h2 {
     display: inline-block;
   }
 
+  /* about */
+  #about-images {
+    margin-top: 50px;
+    justify-content: space-around;
+  }
+  #about-images .shadow:last-child {
+    display: none;
+  }
+  #about-images .shadow {
+    flex: 45%;
+    max-width: 45%;
+  }
+
   /* footer */
   #ig-column .column {
     flex: calc(100% / 7 *3);
@@ -1428,6 +1443,15 @@ footer h2 {
   }
   #indicators {
     margin-top: 0;
+  }
+
+  /* about */
+  #about-images .shadow:nth-child(2) {
+    display: none;
+  }
+  #about-images .shadow {
+    flex: 70%;
+    max-width: 70%;
   }
 
   /* footer */
