@@ -1376,6 +1376,15 @@ footer h2 {
     max-width: 42%;
     flex: 42%;
   }
+
+  /* blog */
+  #blog .column {
+    flex: 45%;
+    max-width: 45%;
+  }
+  #blog .column:last-child {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1536,6 +1545,13 @@ footer h2 {
   }
   #team-people .team-container:last-child {
     display: none;
+  }
+
+  /* blog */
+  #blog .column {
+    flex: 96%;
+    max-width: 96%;
+    margin-bottom: 30px;
   }
 }
 
