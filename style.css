@@ -1323,6 +1323,19 @@ footer h2 {
 }
 
 @media screen and (max-width: 860px) {
+  /* services */
+  #services li {
+    width: 48%;
+    margin-bottom: 40px;
+  }
+  #services li:nth-child(2),
+  #services li:nth-child(5) {
+    margin:  0 0 40px 0;
+  }
+  #services li:nth-child(odd) {
+    margin-right: 4%;
+  }
+
   /* footer */
   #ig-column .column {
     flex: 37.5%;
@@ -1437,6 +1450,21 @@ footer h2 {
   }
   #hamburger-menu li:nth-child(4) {
     margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  /* services */
+  #services li:nth-child(odd) {
+    margin-right: 0;
+  }
+  #services li:nth-child(2),
+  #services li:nth-child(5) {
+    margin-left: 5%;
+  }
+  #services li {
+    width: 90%;
+    margin-left: 5%;
   }
 }
 
