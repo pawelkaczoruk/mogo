@@ -116,11 +116,13 @@ i {
 
 /* navbar */
 nav {
-  background-image: linear-gradient(rgba(179, 152, 152, 0.9),rgba(168, 147, 147, 0.9)); 
   position: fixed;
   width: 100%;
   height: 54px;
   z-index: 5;
+}
+nav.background {
+  background: rgba(0, 0, 0, 0.444);
 }
 nav .wrapper {
   height: 100%;
@@ -1252,9 +1254,9 @@ footer h2 {
   width: 100%;
   height: 0;
   visibility: hidden;
-  background: rgba(168, 147, 147, 0.9);
-  border-top: 1px solid rgba(170, 169, 169, 0.637);
-  border-bottom: 1px solid rgba(170, 169, 169, 0.637);
+  background: rgba(0, 0, 0, 0.444);
+  border-top: 1px solid rgba(177, 177, 177, 0.384);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
   transition: height .3s ease-in-out,
               visibility linear .3s;
   overflow: hidden;
