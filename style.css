@@ -760,8 +760,10 @@ header .learn-more:hover {
 
 /* logos */
 #logos {
+  background: rgb(248, 248, 248);
   width: 100%;
   margin-top: 120px;
+  padding: 10px 0;
 }
 #logos ul {
   display: flex;
