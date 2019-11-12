@@ -516,15 +516,6 @@ header .learn-more:hover {
   height: 450px;
   position: relative;
 }
-#design-background:after {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
 #design-background .wrapper {
   position: relative;
 }
@@ -535,7 +526,7 @@ header .learn-more:hover {
   transform: translateX(-55%);
 }
 #ipad-screen img {
-  height: 450px;
+  max-height: 450px;
 }
 #iphone-screen {
   position: absolute;
@@ -543,7 +534,7 @@ header .learn-more:hover {
   left: 57%;
 }
 #iphone-screen img {
-  height: 350px;
+  max-height: 350px;
 }
 
 
@@ -1446,8 +1437,7 @@ footer h2 {
     margin-top: 50px;
   }
   #design {
-    margin-top: 10px;
-    padding-top: 0;
+    padding-top: 40px;
   }
 
   /* about */
@@ -1690,6 +1680,11 @@ footer h2 {
 }
 
 @media screen and (max-width: 400px) {
+  /* design */
+  #design-background {
+    overflow: hidden;
+  }
+
   /* navbar */
   #hamburger-menu.active {
     height: 500%;
