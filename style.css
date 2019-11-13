@@ -361,7 +361,7 @@ header .learn-more:hover {
   justify-content: space-between;
 }
 .images img {
-  max-width: 100%;
+  width: 100%;
   display: block;
 }
 .images {
@@ -376,10 +376,10 @@ header .learn-more:hover {
   right: 0;
   bottom: 0;
 }
-.images:hover {
+.shadow:hover .images {
   transform: translate(-9px, -9px);
 }
-.images:hover:before {
+.shadow:hover .images:before {
   background-image: linear-gradient(rgba(234, 131, 131, 0.9), rgba(240, 217, 138, 0.9));
 }
 #about-images .shadow {
@@ -393,8 +393,8 @@ header .learn-more:hover {
 #team-people .shadow {
   background: var(--icons-color);
 }
-#about-images .images:hover .description,
-#team-people .images:hover .media-links {
+#about-images .shadow:hover .description,
+#team-people .shadow:hover .media-links {
   display: block;
 }
 
