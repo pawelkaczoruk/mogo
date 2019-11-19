@@ -27,6 +27,11 @@ p {
 a {
   text-decoration: none;
 }
+/* scrollbar for firefox */
+html, .collapsible-text {
+  scrollbar-width: thin;
+  scrollbar-color: var(--icons-color) white;
+}
 
 
 /* scroll styling */
