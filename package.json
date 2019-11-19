@@ -1,0 +1,26 @@
+{
+  "name": "mogo",
+  "version": "1.0.0",
+  "description": "free psd to responsive website",
+  "main": "main.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "prod": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/btkFishu/mogo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/btkFishu/mogo/issues"
+  },
+  "homepage": "https://github.com/btkFishu/mogo#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "autoprefixer": "^9.7.2"
+  }
+}

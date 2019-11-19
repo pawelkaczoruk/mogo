@@ -184,7 +184,7 @@ header {
   color: white;
   width: 100%;
   height: 700px;
-  background: url(images/bannerBackground1.jpg) no-repeat center center;
+  background: url('../images/bannerBackground1.jpg') no-repeat center center;
   background-size: cover;
   transition: background 1s ease-in;
 }
@@ -506,7 +506,7 @@ header .learn-more:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('images/mountainLake.jpg') no-repeat center center;
+  background: url('../images/mountainLake.jpg') no-repeat center center;
   background-size: cover;
   opacity: 0.18;
   z-index: -1;
@@ -854,7 +854,7 @@ header .learn-more:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('images/backgroundClients.jpg') no-repeat center center;
+  background: url('../images/backgroundClients.jpg') no-repeat center center;
   background-size: cover;
   opacity: 0.18;
   z-index: -1;
@@ -979,7 +979,7 @@ header .learn-more:hover {
   left: 0;  
   height: 100%;
   width: 100%;
-  background: url(images/map.jpg) no-repeat center center;
+  background: url('../images/map.jpg') no-repeat center center;
   background-size: cover;
   z-index: -1;
   opacity: 0.18;
@@ -1411,8 +1411,7 @@ footer h2 {
   #team h2:nth-child(2):after,
   #work h2:nth-child(2):after,
   #clients h2:nth-child(2):after,
-  #blog h2:nth-child(2):after,
-  #map .text-n:after {
+  #blog h2:nth-child(2):after {
     margin: 45px auto;
   }
   #about,

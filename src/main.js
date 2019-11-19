@@ -15,7 +15,7 @@ const menu = document.getElementById('hamburger-menu');
 const hb = document.getElementById('hamburger');
 
 // toggle hamburger menu
-function hamburger() {
+window.hamburger = function() {
   hb.classList.toggle('active');
   menu.classList.toggle('active');
 }
@@ -31,15 +31,18 @@ for(const el of content) {
 
 
 /*                   HEADER                    */
-
+const bg1 = require("./images/bannerBackground1.jpg"),
+      bg2 = require("./images/bannerBackground2.jpg"),
+      bg3 = require("./images/bannerBackground3.jpg"),
+      bg4 = require("./images/bannerBackground4.jpg");
 const headerTitles = document.querySelectorAll('#titles-container li'),
       progressBars = document.querySelectorAll('#indicators .fill'),
       header = document.querySelector('header'),
       backgrounds = [
-  'url(images/bannerBackground1.jpg)',
-  'url(images/bannerBackground2.jpg)',
-  'url(images/bannerBackground3.jpg)',
-  'url(images/bannerBackground4.jpg)'
+  `url(${bg1})`,
+  `url(${bg2})`,
+  `url(${bg3})`,
+  `url(${bg4})`
 ];
 let current = 0;
 
@@ -76,7 +79,7 @@ setInterval(() => {
 /*                   COLLAPSIBLE                    */
 
 // collapsible expanding and shrinking
-function expand(elem) {
+window.expand = function(elem) {
   // get active element
   const expanded = document.querySelector('#collapsible-set .active');
         activeBtn = expanded.previousElementSibling.getElementsByTagName('button'),
@@ -168,7 +171,7 @@ const liServ = document.querySelectorAll('#service-carousel ul li'),
 let indexS = 0,
     indexT = 0;
 
-function show(direction, el) {
+window.show = function(direction, el) {
   let index, li;
 
   // check which carousel was activated, set proper variables
