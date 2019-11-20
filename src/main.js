@@ -1,3 +1,5 @@
+import "@babel/polyfill";
+
 /*                   NAVBAR                    */
 const nav = document.getElementsByTagName('nav');
 // add remove class when page is offset
@@ -81,7 +83,7 @@ setInterval(() => {
 // collapsible expanding and shrinking
 window.expand = function(elem) {
   // get active element
-  const expanded = document.querySelector('#collapsible-set .active');
+  const expanded = document.querySelector('#collapsible-set .active'),
         activeBtn = expanded.previousElementSibling.getElementsByTagName('button'),
         all = document.getElementsByClassName('collapsible-title');
   
