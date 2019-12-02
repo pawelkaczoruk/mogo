@@ -33,19 +33,8 @@ for(const el of content) {
 
 
 /*                   HEADER                    */
-const bg1 = require("./images/bannerBackground1.jpg"),
-      bg2 = require("./images/bannerBackground2.jpg"),
-      bg3 = require("./images/bannerBackground3.jpg"),
-      bg4 = require("./images/bannerBackground4.jpg");
 const headerTitles = document.querySelectorAll('#titles-container li'),
-      progressBars = document.querySelectorAll('#indicators .fill'),
-      header = document.querySelector('header'),
-      backgrounds = [
-  `url(${bg1})`,
-  `url(${bg2})`,
-  `url(${bg3})`,
-  `url(${bg4})`
-];
+      progressBars = document.querySelectorAll('#indicators .fill');
 let current = 0;
 
 // header animations
@@ -68,12 +57,9 @@ setInterval(() => {
       current = 0;
   }
 
-  // add new active class to next progress bar
+  // add new active class to next progress bar and banner title
   progressBars[current].classList.toggle('active');
-
-  // add active class to next header title and set new background image
   headerTitles[current].classList.toggle('active');
-  header.style.backgroundImage = backgrounds[current];
 }, 6000);
 
 
