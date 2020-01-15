@@ -16,7 +16,7 @@ Live verision of website is available [here](https://nervous-wozniak-2fa3dd.netl
 
 ## 3. What was used?
 
-I wanted to create this website using pure js, css and html. I wanted to write code for all interactive elements by myself and not rely on additional plugins.
+I wanted to create this website using pure JS, CSS and HTML. I wanted to write a code for all interactive elements (such as navbar, dropdown, slider) by myself and not to rely on any additional plugins. Website was coded using RWD techniques. I started coding view for desktop first and then mobile view.
 
 ### Tech stack:
 * npm
